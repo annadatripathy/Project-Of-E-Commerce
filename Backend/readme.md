@@ -1,1 +1,0 @@
-we create a video streaming app for perform a similar type of youtube.

@@ -62,3 +62,8 @@ input::placeholder{
     align-items: center;
     gap:4rem
 }
+
+.nav-button{
+    background-color: #270858;
+    color: white;
+}

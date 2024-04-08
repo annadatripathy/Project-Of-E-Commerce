@@ -57,46 +57,38 @@ const Navbar = ({setData,cart}) => {
   </span>
 </button>
             </Link>
-            <div className="nav-buttons">
-              <Link to={'/login'} className="nav-button">
-                <button>Login</button>
-              </Link>
-              <Link to={'/signup'} className="nav-button">
-                <button>Sign Up</button>
-              </Link>
-            </div>
         </div>
 
         {
           location.pathname == '/' && (
             <div className="nav-bar-wrapper">
-            <div className="items">Filter by {"->"}</div>
+            <div className="items">Home {"->"}</div>
             <div 
             onClick={()=>setData(items)}
-            className="items">No Filter</div>
+            className="items">Contact</div>
             <div 
             onClick={()=>filterByCategory('mobiles')}
-             className="items">Mobiles</div>
+             className="items">Log in</div>
             <div
             onClick={()=>filterByCategory('laptops')}
     
-             className="items">Laptops</div>
+             className="items"></div>
             <div
             onClick={()=>filterByCategory('tablets')}
     
-             className="items">Tablets</div>
+             className="items"></div>
             <div
             onClick={()=>filterByPrice(29999)}
-            className="items">{">="}29999</div>
+            className="items">{">="}</div>
             <div
             onClick={()=>filterByPrice(49999)}
-            className="items">{">="}49999</div>
+            className="items">{">="}</div>
             <div
             onClick={()=>filterByPrice(69999)}
-            className="items">{">="}69999</div>
+            className="items">{">="}</div>
             <div
             onClick={()=>filterByPrice(89999)}
-            className="items">{">="}89999</div>
+            className="items">{">="}</div>
             
             </div>
           )
